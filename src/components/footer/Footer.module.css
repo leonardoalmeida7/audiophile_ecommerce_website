@@ -1,0 +1,96 @@
+.footer {
+    background-color: var(--color6);
+    padding: 30px 26px;
+    position: relative;
+}
+
+.footer::before {
+    content: "";
+    display: block;
+    height: 4px;
+    width: 26%;
+    background-color: var(--color1);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.logoAndNav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    color: var(--color3);
+}
+
+.logoAndNav h2 {
+    font-size: 2rem;
+    font-weight: 900;
+    text-transform: lowercase;
+    letter-spacing: 0;
+}
+
+.logoAndNav nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+.logoAndNav nav li {
+    list-style: none;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 12px 0;
+    font-size: 0.875rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.logoAndNav nav li:hover {
+    color: var(--color1);
+}
+
+.description {
+    text-align: center;
+    color: var(--color9);
+    margin: 32px 0;
+}
+
+.description p {
+    margin: 0;
+    line-height: 1.5;
+    font-weight: 600;
+}
+
+.copyAndIcons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    color: var(--color9);
+}
+
+.copyAndIcons p {
+    margin: 0;
+    line-height: 1.5;
+    font-weight: 600;
+}
+
+.copyAndIcons .icons {
+    display: flex;
+    gap: 12px;
+    color: var(--color3);
+    font-size: 1.5rem;
+    margin: 16px 0;
+}
+
+.icons .icon {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.icons .icon:hover {
+    color: var(--color1);
+}

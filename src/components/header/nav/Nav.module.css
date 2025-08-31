@@ -1,0 +1,64 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    color: var(--color3);
+    background-color: var(--color10);
+    border-bottom: 1px solid var(--color8);
+    position: absolute;
+    width: 100%;
+}
+
+.title h1 {
+    text-transform: lowercase;
+    font-weight: 900;
+    font-size: 1.7rem;
+    cursor: pointer;
+    margin: 0;
+}
+
+.hamburgerIcon,
+.cartIcon {
+    font-size: 1.6rem;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.hamburgerIcon:hover,
+.cartIcon:hover {
+    color: var(--color1);
+}
+
+.hidden, 
+.showNav {
+    position: absolute;
+    background-color: var(--color10);
+    transition: all .5s linear;
+    width: 100%;
+    padding-right: 26px;
+    left: 0;
+}
+
+.hidden {
+    transform: translate(0,-130%);
+    z-index: -100;
+}
+
+.showNav {
+    top: calc(100% + 1px);
+    left: 0;
+    z-index: 0;
+}
+
+.navList li {
+    list-style: none;
+    margin: 1.5rem 0;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all .3s ease;
+}
+
+.navList li:hover {
+    color: var(--color1);
+}

@@ -1,0 +1,20 @@
+:root {
+  /* Colors */
+  --color1: #D87D4A;
+  --color2: #FBAF85;
+  --color3: #FFFFFF;
+  --color4: #000000;
+  --color5: #F0F0F0;
+  --color6: #101010;
+  --color7: #FAFAFA;
+  --color8: #333333;
+  --color9: #555555;
+  --color10: #191919;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Manrope', sans-serif;
+}
