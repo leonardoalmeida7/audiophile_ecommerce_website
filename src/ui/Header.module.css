@@ -1,0 +1,15 @@
+.header {
+    background-color: var(--color10);
+    padding: 26px;
+    color: var(--color3);
+    position: relative;
+    z-index: -200;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 1.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}

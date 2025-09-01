@@ -12,7 +12,7 @@
 }
 
 .textContainer h2 {
-    font-size: 1.85rem;
+    font-size: 1.9rem;
     font-weight: 700;
     color: var(--color4);
     text-align: center;
@@ -25,7 +25,7 @@
 }
 
 .textContainer p {
-    font-size: .95rem;
+    font-size: 1.05rem;
     font-weight: 500;
     color: var(--color9);
     text-align: center;

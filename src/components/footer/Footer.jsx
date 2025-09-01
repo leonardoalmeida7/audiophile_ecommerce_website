@@ -2,6 +2,7 @@ import styles from './Footer.module.css';
 import { ImFacebook2 } from "react-icons/im";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa6";
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -10,10 +11,10 @@ const Footer = () => {
           <h2>Audiophile</h2>
           <nav>
             <ul>
-              <li>Home</li>
-              <li>Headphones</li>
-              <li>Speakers</li>
-              <li>Earphones</li>
+              <li><Link to="/" className={styles.link}>Home</Link></li>
+              <li><Link to="/headphones" className={styles.link}>Headphones</Link></li>
+              <li><Link to="/speakers" className={styles.link}>Speakers</Link></li>
+              <li><Link to="/earphones" className={styles.link}>Earphones</Link></li>
             </ul>
           </nav>
         </div>

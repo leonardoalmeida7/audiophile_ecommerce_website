@@ -41,7 +41,7 @@
     letter-spacing: 2px;
     text-align: center;
     text-transform: uppercase;
-    margin: 12px 0;
+    margin: 22px 0;
     font-size: 0.875rem;
     font-weight: 600;
     cursor: pointer;
@@ -93,4 +93,9 @@
 
 .icons .icon:hover {
     color: var(--color1);
+}
+
+.link {
+    text-decoration: none;
+    color: inherit;
 }

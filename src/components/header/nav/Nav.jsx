@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { NavLink } from "react-router-dom"; // Troque Link por NavLink
 
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { GiHamburgerMenu } from "react-icons/gi";
@@ -9,7 +10,7 @@ const Nav = () => {
   const [isActive, setIsActive] = useState(false);
 
   const handleClick = () => {
-      isActive ? setIsActive(false) : setIsActive(true);
+      setIsActive(!isActive);
   }
 
   return (
@@ -20,10 +21,34 @@ const Nav = () => {
           </div>
           <nav className={!isActive ? styles.hidden : styles.showNav}>
               <ul className={styles.navList}>
-                  <li>Home</li>
-                  <li>Headphones</li>
-                  <li>Speakers</li>
-                  <li>Earphones</li>
+                  <NavLink 
+                    to="/" 
+                    className={({ isActive }) => isActive ? `${styles.active} navlink` : "navlink"} 
+                    onClick={handleClick}
+                  >
+                    <li>Home</li>
+                  </NavLink>
+                  <NavLink 
+                    to="/headphones" 
+                    className={({ isActive }) => isActive ? `${styles.active} navlink` : "navlink"} 
+                    onClick={handleClick}
+                  >
+                    <li>Headphones</li>
+                  </NavLink>
+                  <NavLink 
+                    to="/speakers" 
+                    className={({ isActive }) => isActive ? `${styles.active} navlink` : "navlink"} 
+                    onClick={handleClick}
+                  >
+                    <li>Speakers</li>
+                  </NavLink>
+                  <NavLink 
+                    to="/earphones" 
+                    className={({ isActive }) => isActive ? `${styles.active} navlink` : "navlink"} 
+                    onClick={handleClick}
+                  >
+                    <li>Earphones</li>
+                  </NavLink>
               </ul>
           </nav>
         </div>
