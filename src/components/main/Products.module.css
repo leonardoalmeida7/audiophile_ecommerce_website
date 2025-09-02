@@ -84,13 +84,13 @@
 }
 
 #product1 {
-    background: url('../../assets/shared/desktop/image-category-thumbnail-headphones.png') no-repeat center/cover;
+    background: url('/images/shared/desktop/image-category-thumbnail-headphones.png') no-repeat center/cover;
 }
 
 #product2 {
-    background: url('../../assets/shared/desktop/image-category-thumbnail-speakers.png') no-repeat center/cover;
+    background: url('/images/shared/desktop/image-category-thumbnail-speakers.png') no-repeat center/cover;
 }
 
 #product3 {
-    background: url('../../assets/shared/desktop/image-category-thumbnail-earphones.png') no-repeat center/cover;
+    background: url('/images/shared/desktop/image-category-thumbnail-earphones.png') no-repeat center/cover;
 }

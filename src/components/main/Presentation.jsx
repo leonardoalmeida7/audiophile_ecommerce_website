@@ -1,5 +1,5 @@
 import styles from './Presentation.module.css';
-import imgMan from '../../assets/shared/mobile/image-best-gear.jpg';
+import imgMan from '/images/shared/mobile/image-best-gear.jpg';
 
 const Presentation = () => {
   return (

@@ -1,6 +1,6 @@
 import styles from './Recommended.module.css';
 
-import imgSpeaker from '../../assets/home/desktop/image-speaker-zx9.png';
+import imgSpeaker from '/images/home/desktop/image-speaker-zx9.png';
 
 const Recommended = () => {
   return (

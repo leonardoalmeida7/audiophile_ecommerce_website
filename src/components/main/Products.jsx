@@ -1,5 +1,5 @@
 import styles from './Products.module.css'
-import iconArrow from '../../assets/shared/desktop/icon-arrow-right.svg'
+import iconArrow from '/images/shared/desktop/icon-arrow-right.svg'
 
 const Products = () => {
   return (
