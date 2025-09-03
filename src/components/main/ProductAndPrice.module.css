@@ -1,0 +1,55 @@
+.controls {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 16px;
+}
+
+.price {
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.qnty {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: var(--color5);
+    padding: 12px 24px;
+}
+
+.qnty input {
+    width: 50px;
+    text-align: center;
+    border: none;
+    background: transparent;
+    
+}
+
+.qnty input[type="number"]::-webkit-outer-spin-button,
+.qnty input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.qnty input[type="number"] {
+    appearance: textfield;
+    -moz-appearance: textfield;
+}
+
+.qnty .icon {
+    cursor: pointer;
+    color: var(--color9);
+    font-size: .6rem;
+}
+
+.controls button {
+    background: var(--color1);
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.controls button:hover {
+    background: var(--color2);
+}

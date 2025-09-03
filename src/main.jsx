@@ -1,12 +1,16 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
+
 import './index.css'
-import App from './App.jsx'
+
 import { createHashRouter, RouterProvider } from 'react-router-dom';
+
+import App from './App.jsx'
 import Home from './pages/home/Home.jsx';
 import Headphones from './pages/headphones/Headphones.jsx';
 import Speakers from './pages/speakers/Speakers.jsx';
 import Earphones from './pages/earphones/Earphones.jsx';
+import ProductFeatures from './pages/product/ProductFeature.jsx';
 
 const router = createHashRouter(
   [
@@ -18,6 +22,7 @@ const router = createHashRouter(
       {path: '/headphones', element: <Headphones />},
       {path: '/speakers', element: <Speakers />},
       {path: '/earphones', element: <Earphones />},
+      {path: '/product/:id', element: <ProductFeatures />},
     ]
   },
  ],
