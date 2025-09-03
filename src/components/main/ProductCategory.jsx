@@ -14,6 +14,7 @@ const ProductCategory = ({page}) => {
   if (error) return <p>Error loading {page}</p>;
 
   const pageCategory = 'category';
+  //console.log(data)
   return (
     <div className={styles.containerProductCategory}>
         {data.reverse().map(item => (

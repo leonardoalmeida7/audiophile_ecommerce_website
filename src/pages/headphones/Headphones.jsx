@@ -4,7 +4,6 @@ import Products from '../../components/main/Products';
 import Header from '../../ui/Header';
 import Main from '../../ui/Main';
 
-import styles from './Headphones.module.css';
 import ProductCategory from '../../components/main/ProductCategory';
 
 const Headphones = () => {

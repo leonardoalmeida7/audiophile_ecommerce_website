@@ -1,0 +1,15 @@
+.back {
+    margin: 16px 0;
+    color: var(--color9);
+}
+
+.back a {
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease;
+}
+
+.back a:hover {
+    color: var(--color1);
+    text-decoration: underline;
+}

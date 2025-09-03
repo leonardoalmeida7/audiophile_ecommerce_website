@@ -1,0 +1,25 @@
+
+
+.includes {
+    margin: 44px 0;
+}
+
+.includes h3 {
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.includes > div {
+    margin-bottom: 8px;
+}
+
+.includes span {
+    margin-right: 16px;
+    text-transform: capitalize;
+}
+
+.includes .quantity {
+    color: var(--color1);
+    font-weight: 600;
+}

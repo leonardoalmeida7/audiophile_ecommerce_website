@@ -1,0 +1,16 @@
+
+.imagesContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin: 6rem 0;
+}
+
+.imagesContainer div {
+    flex: 1 1 50%;
+}
+
+.imagesContainer img {
+    width: 100%;
+    border-radius: 8px;
+}

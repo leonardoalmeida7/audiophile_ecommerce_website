@@ -1,0 +1,25 @@
+.other {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.other img{
+    width: 100%;
+    border-radius: 8px;
+}
+
+.info h4 {
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+}
+
+.other .info button {
+    background-color: var(--color1);
+    color: var(--color3);
+    border: none;
+    margin: 16px 0;
+}

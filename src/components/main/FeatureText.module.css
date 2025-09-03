@@ -1,0 +1,13 @@
+.features {
+    margin: 64px 0;
+}
+
+.features h2 {
+    margin: 24px 0;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.features p {
+    color: var(--color9);
+}

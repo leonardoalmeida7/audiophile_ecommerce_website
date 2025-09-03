@@ -10,7 +10,6 @@ const ProductDetails = ({item, page}) => {
       style = 'productInfo2'
       break;
   }
-
   return (
     <>
         <div className={styles.imageContainer}>
