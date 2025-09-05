@@ -9,6 +9,7 @@ import Presentation from '../../components/main/Presentation'
 import Main from '../../ui/Main'
 import useFetch from '../../hooks/useFetch'
 
+import Products from '../../components/main/Products'
 
 const HeadphoneFeatures = () => {
   const paramsId = window.location.href.split('#')[1].split('/').pop();
@@ -17,13 +18,9 @@ const HeadphoneFeatures = () => {
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error loading headphones</p>;
 
-
   const itemById = data.filter(item => item.id == paramsId )[0];
-  console.log(itemById)
 
-  const category = itemById.category
 
-  const getItemByCategory = data.filter(item => item.category == category)
   return (
     <Main>
         <GoBack item={itemById} />
@@ -32,6 +29,7 @@ const HeadphoneFeatures = () => {
         <InTheBox item={itemById} />
         <ImagesGallery item={itemById} />
         <OtherProducts item={itemById} />
+        <Products />
         <Presentation />
     </Main>
   )

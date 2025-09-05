@@ -24,7 +24,7 @@
     text-align: center;
     border: none;
     background: transparent;
-    
+    outline: none;
 }
 
 .qnty input[type="number"]::-webkit-outer-spin-button,

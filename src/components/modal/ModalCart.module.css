@@ -1,0 +1,137 @@
+
+.background {
+    position: absolute;
+    height: 91vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.39);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    top: 9vh;
+}
+
+.modal {
+    position: absolute;
+    color: var(--color4);
+    padding: 1.5rem;
+    background-color: var(--color3);
+    border-radius: 8px;
+    width: 90%;
+    top: 12%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.modal .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.modal .header h5 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0;
+}
+.item img {
+    width: 64px;
+    height: 64px;
+    border-radius: 8px;
+    margin-right: 16px;
+}
+
+.item .details {
+    display: flex;
+    flex-direction: column;
+}
+
+.item .details h4 {
+    font-size: .95rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.item .details p {
+    margin: 0;
+    font-weight: 400;
+}
+
+.qnty {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: var(--color5);
+    padding: 6px 14px;
+}
+
+.qnty input {
+    width: 50px;
+    text-align: center;
+    border: none;
+    background: transparent;
+    outline: none;
+}
+
+.qnty input[type="number"]::-webkit-outer-spin-button,
+.qnty input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.qnty input[type="number"] {
+    appearance: textfield;
+    -moz-appearance: textfield;
+}
+
+.qnty .icon {
+    cursor: pointer;
+    color: var(--color9);
+    font-size: .6rem;
+}
+
+.checkout {
+    display: flex;
+    flex-direction: column;
+}
+
+.checkout .total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: .5rem 0;
+    font-weight: 600;
+}
+
+.checkout .total h4 {
+    text-transform: uppercase;
+    font-size: .95rem;
+
+}
+
+.checkout button {
+    padding: 16px;
+    background: var(--color1);
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.checkout button:hover {
+    background: var(--color2);
+}
+
+.empty {
+    text-align: center;
+    padding: 2rem;
+    font-weight: 600;
+}

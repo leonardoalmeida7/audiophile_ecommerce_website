@@ -7,13 +7,16 @@
     gap: 20px;
 }
 
-.products > div {
+.products > a {
     cursor: pointer;
     height: 245px;
     width: 100%;
+    text-decoration: none;
+    color: inherit;
+    width: 100%;
 }
 
-.products > div:hover p img {
+.products > a:hover p img {
     margin-left: 10px;
 }
 
@@ -34,7 +37,7 @@
     transition: all 1s linear;
 }
 
-.products > div:hover .item .img {
+.products > a:hover .item .img {
     animation: upanddown 1.5s infinite alternate;
 }
 

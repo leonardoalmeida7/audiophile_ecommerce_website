@@ -5,14 +5,16 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css'
 
 import Nav from './components/header/nav/Nav';
+import ModalCart from './components/modal/ModalCart';
 import Footer from './components/footer/Footer';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [cartActive, setCartActive] = useState(false)
 
   return (
     <div className='app'>
-      <Nav />
+      <Nav isOpen={cartActive} setCartActive={setCartActive}/>
+      {cartActive && <ModalCart />}
       <Outlet />
       <Footer />
     </div>

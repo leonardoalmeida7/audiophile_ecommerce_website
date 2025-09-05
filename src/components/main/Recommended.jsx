@@ -1,6 +1,11 @@
+
 import styles from './Recommended.module.css';
 
 import imgSpeaker from '/images/home/desktop/image-speaker-zx9.png';
+
+import Button from '../../ui/Button';
+
+import { Link } from 'react-router-dom';
 
 const Recommended = () => {
   return (
@@ -9,12 +14,16 @@ const Recommended = () => {
             <img src={imgSpeaker} alt="zx9_speakers"  className={styles.imgSpeaker}/>
             <h2>ZX9 <br /> SPEAKERS</h2>
             <p>Upgrade to premium speakers that are phenomenally built to deliver truly remarkable sound.</p>
-            <button>SEE PRODUCT</button>
+            <Link to="/product/6">
+                <Button>SEE PRODUCT</Button>
+            </Link>
         </div>
         <div className={styles.containerSpeaker2}>
             <div>
                 <h2>ZX7 SPEAKER</h2>
-                <button>SEE PRODUCT</button>
+                <Link to="/product/5">
+                    <Button>SEE PRODUCT</Button>
+                </Link>
             </div>
         </div>
         <div className={styles.containerEarphone}>
@@ -22,7 +31,9 @@ const Recommended = () => {
             </div>
             <div className={styles.textEarphone}>
                 <h2>YX1 EARPHONES</h2>
-                <button>SEE PRODUCT</button>
+                <Link to="/product/1">
+                    <Button>SEE PRODUCT</Button>
+                </Link>
             </div>
         </div>
     </div>
