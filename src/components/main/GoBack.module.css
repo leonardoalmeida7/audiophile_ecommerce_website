@@ -3,13 +3,12 @@
     color: var(--color9);
 }
 
-.back a {
-    text-decoration: none;
-    color: inherit;
+.back span {
     transition: all 0.3s ease;
+    cursor: pointer;
 }
 
-.back a:hover {
+.back span:hover {
     color: var(--color1);
     text-decoration: underline;
 }

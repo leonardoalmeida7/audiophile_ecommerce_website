@@ -6,7 +6,7 @@ import OtherProducts from '../../components/main/OtherProducts'
 import GoBack from '../../components/main/GoBack'
 import Presentation from '../../components/main/Presentation'
 
-import Main from '../../ui/Main'
+import Main from '../../layouts/Main'
 import useFetch from '../../hooks/useFetch'
 
 import Products from '../../components/main/Products'

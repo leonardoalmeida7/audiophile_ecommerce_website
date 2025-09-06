@@ -2,29 +2,27 @@ import { useState, useEffect } from 'react'
 
 import { FaMinus } from "react-icons/fa6";
 import { FaPlus } from "react-icons/fa6";
-import { setItems, getItems } from '../../utils/Cart';
+import { useCart } from '../../context/useCart';
 
 import styles from './ModalCart.module.css';
 
 
 const ControllerCart = ({item}) => {
-    const [count, setCount] = useState(item.qnty);
-    const [cartItem, setCartItem] = useState(item);
+    const [count, setCount] = useState(item.quantity);
 
-    const getItemsCart = getItems();
-    
-    useEffect(() => {
-    setCartItem(prev => ({ ...prev, qnty: count }));
-    }, [count]);
+    const {updateQuantity, removeFromCart} = useCart();
 
     useEffect(() => {
-        setItems([...getItemsCart.filter(item => item.id !== cartItem.id), cartItem]); 
-    }, [cartItem]);
+        updateQuantity(item.id, count);
+        if(count === 0) {
+            removeFromCart(item.id);
+        }
+    }, [count])
 
   return (
     <>
         <div>
-            <img src="" alt="" />
+            <img src={`images/cart/image-${item.slug}.jpg`} alt={item.slug} />
         </div>
         <div className={styles.details}>
             <h4>{item.name}</h4>

@@ -1,14 +1,13 @@
 
 .background {
     position: absolute;
-    height: 91vh;
+    height: 100dvh;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.39);
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 1000;
-    top: 9vh;
 }
 
 .modal {
@@ -35,6 +34,20 @@
     font-weight: 600;
     letter-spacing: 2px;
 }
+
+.modal .header span {
+    font-size: .9rem;
+    font-weight: 600;
+    color: var(--color9);
+    cursor: pointer;
+    text-decoration: underline;
+    transition: all .3s ease;
+
+    &:hover {
+        color: var(--color1);
+    }
+}
+
 
 .item {
     display: flex;
@@ -124,10 +137,17 @@
     cursor: pointer;
     font-weight: 600;
     text-transform: uppercase;
+    width: 100%;
 }
 
 .checkout button:hover {
     background: var(--color2);
+}
+
+.checkout button a {
+    text-decoration: none;
+    color: inherit;
+    
 }
 
 .empty {
@@ -135,3 +155,4 @@
     padding: 2rem;
     font-weight: 600;
 }
+

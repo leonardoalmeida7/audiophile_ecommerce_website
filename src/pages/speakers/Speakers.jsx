@@ -3,7 +3,7 @@ import Products from "../../components/main/Products"
 import Presentation from "../../components/main/Presentation"
 
 import Header from "../../ui/Header"
-import Main from "../../ui/Main"
+import Main from "../../layouts/Main"
 
 const Speakers = () => {
   return (

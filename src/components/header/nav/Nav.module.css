@@ -6,7 +6,9 @@
     color: var(--color3);
     background-color: var(--color10);
     border-bottom: 1px solid var(--color8);
-    position: relative;
+    position: absolute;
+    top: 0;
+    z-index: 500;
     width: 100%;
 }
 
@@ -42,13 +44,16 @@
 
 .hidden {
     transform: translate(0,-130%);
+    opacity: 0;
     z-index: -500;
+    
 }
 
 .showNav {
     top: calc(100% + 1px);
     left: 0;
-    z-index: 10;
+    z-index: 1;
+
 }
 
 

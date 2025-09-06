@@ -1,5 +1,5 @@
 import Header from '../../ui/Header'
-import Main from '../../ui/Main'
+import Main from '../../layouts/Main'
 
 import ProductCategory from '../../components/main/ProductCategory'
 import Products from '../../components/main/Products'

@@ -6,11 +6,11 @@ import { GiHamburgerMenu } from "react-icons/gi";
 
 import styles from './Nav.module.css';
 
-const Nav = ({isOpen, setCartActive}) => {
+const Nav = ({ onCartClick }) => {
   const [isActive, setIsActive] = useState(false);
 
   const handleClick = () => {
-      setIsActive(!isActive);
+    setIsActive(!isActive);
   }
 
   return (
@@ -56,7 +56,7 @@ const Nav = ({isOpen, setCartActive}) => {
             <h1>Audiophile</h1>
         </div>
         <div>
-          <AiOutlineShoppingCart className={styles.cartIcon} onClick={() => setCartActive(!isOpen)} />
+          <AiOutlineShoppingCart className={styles.cartIcon} onClick={onCartClick} />
         </div>
     </div>
   )

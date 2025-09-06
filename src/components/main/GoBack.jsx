@@ -1,11 +1,10 @@
 import styles from './GoBack.module.css'
 
-import { Link } from 'react-router-dom';
 
-const GoBack = ({item}) => {
+const GoBack = () => {
   return (
     <div className={styles.back}>
-        <Link to={`/${item.category}`}>Go Back</Link>
+        <span onClick={() => window.history.back()}>Go Back</span>
     </div>
   )
 }

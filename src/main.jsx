@@ -11,6 +11,7 @@ import Headphones from './pages/headphones/Headphones.jsx';
 import Speakers from './pages/speakers/Speakers.jsx';
 import Earphones from './pages/earphones/Earphones.jsx';
 import ProductFeatures from './pages/product/ProductFeature.jsx';
+import Checkout from './pages/checkout/Checkout.jsx';
 
 const router = createHashRouter(
   [
@@ -23,6 +24,7 @@ const router = createHashRouter(
       {path: '/speakers', element: <Speakers />},
       {path: '/earphones', element: <Earphones />},
       {path: '/product/:id', element: <ProductFeatures />},
+      {path: '/checkout', element: <Checkout />},
     ]
   },
  ],
