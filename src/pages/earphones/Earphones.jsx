@@ -7,14 +7,14 @@ import Presentation from '../../components/main/Presentation'
 
 const Earphones = () => {
   return (
-    <>
+    <div className='containerProducts'>
       <Header>Earphones</Header>
       <Main>
         <ProductCategory page="earphones" />
         <Products />
         <Presentation />
       </Main>
-    </>
+    </div>
   )
 }
 

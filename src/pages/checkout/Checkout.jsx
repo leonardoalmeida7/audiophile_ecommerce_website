@@ -1,8 +1,7 @@
-import Main from '../../layouts/Main'
 import GoBack from '../../components/main/GoBack'
 
 import styles from './Checkout.module.css'
-import Cart from '../../components/main/CartSummary'
+import CartSummary from './components/CartSummary'
 
 const Checkout = () => {
   return (
@@ -81,7 +80,7 @@ const Checkout = () => {
           </form>
         </div>
       </section>
-      <Cart />
+      <CartSummary />
     </div>
   )
 }

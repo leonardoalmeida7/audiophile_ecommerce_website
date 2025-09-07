@@ -3,7 +3,7 @@ import styles from './Recommended.module.css';
 
 import imgSpeaker from '/images/home/desktop/image-speaker-zx9.png';
 
-import Button from '../../ui/Button';
+import Button from '../../../ui/Button';
 
 import { Link } from 'react-router-dom';
 

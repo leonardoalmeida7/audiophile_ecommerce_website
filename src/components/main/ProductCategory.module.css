@@ -4,10 +4,8 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin: 42px 0;
+    margin: 42px 0 120px 0;
 }
-
-
 
 .product button {
     background-color: var(--color1);

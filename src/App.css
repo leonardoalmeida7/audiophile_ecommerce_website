@@ -6,3 +6,11 @@ body, html {
     text-decoration: none;
     color: inherit;
 }
+
+.containerProducts {
+    margin-top: 80px;
+}
+
+.containerProductsDetails {
+    margin-top: 100px;
+}

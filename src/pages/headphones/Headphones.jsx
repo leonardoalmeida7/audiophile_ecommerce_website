@@ -9,14 +9,14 @@ import ProductCategory from '../../components/main/ProductCategory';
 const Headphones = () => {
 
   return (
-    <>
+    <div className='containerProducts'>
       <Header>Headphones</Header>
       <Main>
         <ProductCategory  page="headphones"/>
         <Products />
         <Presentation />
       </Main>
-    </>
+    </div>
   )
 }
 

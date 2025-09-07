@@ -7,14 +7,14 @@ import Main from "../../layouts/Main"
 
 const Speakers = () => {
   return (
-    <>
+    <div className='containerProducts'>
       <Header>Speakers</Header>
       <Main>
         <ProductCategory page="speakers" />
         <Products />
         <Presentation />
       </Main>
-    </>
+    </div>
   )
 }
 

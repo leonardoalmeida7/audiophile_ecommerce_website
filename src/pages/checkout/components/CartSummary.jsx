@@ -1,7 +1,7 @@
-import { useCart } from '../../context/useCart';
+import { useCart } from '../../../context/useCart';
 import { Link } from 'react-router-dom';
 
-import Button from "../../ui/Button";
+import Button from "../../../ui/Button";
 
 import styles from './CartSummary.module.css';
 
