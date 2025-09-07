@@ -9,17 +9,19 @@ import Presentation from '../../components/main/Presentation'
 import Main from '../../layouts/Main'
 import useFetch from '../../hooks/useFetch'
 
+
+import { useParams } from 'react-router-dom';
 import Products from '../../components/main/Products'
 
-const HeadphoneFeatures = () => {
-  const paramsId = window.location.href.split('#')[1].split('/').pop();
+
+const ProductFeatures = () => {
+  const { id: paramsId } = useParams();
 
   const { data, loading, error } = useFetch('data.json');
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error loading headphones</p>;
 
-  const itemById = data.filter(item => item.id == paramsId )[0];
-
+  const itemById = data.find(item => String(item.id) === String(paramsId));
 
   return (
     <Main>
@@ -35,4 +37,4 @@ const HeadphoneFeatures = () => {
   )
 }
 
-export default HeadphoneFeatures
+export default ProductFeatures

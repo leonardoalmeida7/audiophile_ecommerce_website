@@ -5,9 +5,11 @@ import { CartProvider } from "./context/CartContext";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css'
 
+
 import Nav from './components/header/nav/Nav';
 import ModalCart from './components/modal/ModalCart';
 import Footer from './components/footer/Footer';
+import ScrollToTop from './ScrollToTop';
 
 
 function App() {
@@ -16,6 +18,7 @@ function App() {
   return (
     <div className='app'>
       <CartProvider>
+        <ScrollToTop />
         <Nav onCartClick={() => setIsCartOpen(true)} />
         {isCartOpen && <ModalCart onClose={() => setIsCartOpen(false)} />}
         <Outlet />

@@ -2,10 +2,11 @@ import Main from '../../layouts/Main'
 import GoBack from '../../components/main/GoBack'
 
 import styles from './Checkout.module.css'
+import Cart from '../../components/main/CartSummary'
 
 const Checkout = () => {
   return (
-    <Main className={styles.ContainerMain}>
+    <div className={styles.container}>
       <GoBack />
       <section className={styles.checkout}>
         <div>
@@ -80,7 +81,8 @@ const Checkout = () => {
           </form>
         </div>
       </section>
-    </Main>
+      <Cart />
+    </div>
   )
 }
 

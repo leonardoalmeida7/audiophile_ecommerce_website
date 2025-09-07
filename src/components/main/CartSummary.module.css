@@ -1,0 +1,86 @@
+.summary {
+    padding: 2rem 1.5rem;
+    background-color: var(--color3);
+    border-radius: 8px;
+    margin-top: 2rem;
+}
+
+.summary .item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+    gap: 1rem;
+}
+
+.summary h3 {
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
+.summary .item h4 {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.item .details {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.item .details p {
+    color: var(--color9);
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.item img {
+    width: 72px;
+    height: 72px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.item .quantity {
+    align-self: start;
+    color: var(--color9);
+    font-weight: 600;
+}
+
+.grandTotal div{
+    margin: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+.grandTotal div span:last-child {
+    color: var(--color6);
+    font-weight: 600;
+}
+
+.grandTotal .finalTotal {
+    margin: 1.5rem 0;
+}
+
+.grandTotal .finalTotal span:last-child {
+    color: var(--color1);
+    font-weight: 700;
+}
+
+.grandTotal button {
+    width: 100%;
+    background-color: var(--color1);
+    color: white;
+    border: none;
+    letter-spacing: 1px;
+
+    &:hover {
+        background-color: var(--color2);
+    }
+}

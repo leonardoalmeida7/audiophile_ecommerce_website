@@ -51,15 +51,20 @@
 
 .item {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     margin: 1rem 0;
 }
 .item img {
-    width: 64px;
-    height: 64px;
+    width: 72px;
+    height: 72px;
     border-radius: 8px;
     margin-right: 16px;
+}
+
+.product {
+    display: flex;
+    align-items: center;
 }
 
 .item .details {
@@ -75,7 +80,9 @@
 
 .item .details p {
     margin: 0;
-    font-weight: 400;
+    font-weight: 600;
+    color: var(--color9);
+    letter-spacing: 1px;
 }
 
 .qnty {
@@ -121,6 +128,8 @@
     align-items: center;
     margin: .5rem 0;
     font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 1.2rem;
 }
 
 .checkout .total h4 {

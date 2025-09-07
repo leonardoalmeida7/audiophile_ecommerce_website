@@ -11,6 +11,7 @@ import ControllerCart from './ControllerCart'
 const ModalCart = ({ onClose }) => {
     const {cart, clearCart} = useCart();
 
+
   return (
     <div className={styles.background} onClick={onClose}>
     <section className={styles.modal} onClick={e => e.stopPropagation()}>
@@ -28,7 +29,7 @@ const ModalCart = ({ onClose }) => {
             <div className={styles.checkout}>
                 <div className={styles.total}>
                     <h4>Total</h4>
-                    <p>${new Intl.NumberFormat().format(cart.reduce((acc, item) => acc + item.price * item.quantity, 0))}</p>
+                    <p>${new Intl.NumberFormat('en-US').format(cart.reduce((acc, item) => acc + item.price * item.quantity, 0))}</p>
                 </div>
                 <Link to="/checkout"><Button event={onClose}>Checkout</Button></Link>
             </div>

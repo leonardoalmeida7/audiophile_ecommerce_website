@@ -21,12 +21,14 @@ const ControllerCart = ({item}) => {
 
   return (
     <>
-        <div>
-            <img src={`images/cart/image-${item.slug}.jpg`} alt={item.slug} />
-        </div>
-        <div className={styles.details}>
-            <h4>{item.name}</h4>
-            <p>${item.price}</p>
+        <div className={styles.product}>
+            <div>
+                <img src={`images/cart/image-${item.slug}.jpg`} alt={item.slug} />
+            </div>
+            <div className={styles.details}>
+                <h4>{item.name}</h4>
+                <p>${new Intl.NumberFormat('en-US').format(item.price)}</p>
+            </div>
         </div>
         <div className={styles.qnty}>
             <FaMinus className={styles.icon} onClick={() => setCount(count - 1)} />

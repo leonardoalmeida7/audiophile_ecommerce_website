@@ -12,13 +12,19 @@ import Button from '../../ui/Button'
 const ProductAndPrice = ({ item }) => {
     const { id, name, slug, price } = item;
 
+    const nameSplit = name.split(' ');
+    const removed = nameSplit.pop();
+    const nameJoin = nameSplit.join(' ');
+
+    
+
     const {cart, addToCart, updateQuantity} = useCart();
 
     const itemQnty = cart.find(item => item.id == id) ? cart.find(item => item.id == id).quantity : 1;
 
     const [count, setCount] = useState(itemQnty);
 
-    const refacturingItem = { id, name, slug, price };
+    const refacturingItem = { id, name: nameJoin, slug, price, };
 
     const pageCategory = 'features';
 
@@ -31,7 +37,7 @@ const ProductAndPrice = ({ item }) => {
     <div>
         <ProductDetails item={item} page={pageCategory} />
         <div className={styles.price}>
-            <span>$ {new Intl.NumberFormat().format(item.price)}</span>
+            <span>${new Intl.NumberFormat('en-US').format(item.price)}</span>
         </div>
         <div className={styles.controls}>
             <div className={styles.qnty}>
