@@ -26,6 +26,7 @@ const ProductAndPrice = ({ item }) => {
 
   const refacturingItem = { id, name: nameJoin, slug, price };
 
+
   const pageCategory = "features";
 
   const handleClickAddCart = () => {

@@ -1,0 +1,126 @@
+.modalShoppingCompleted {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000;
+    padding: 0 2rem;
+}
+
+.modal {
+    background: var(--color3);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.modal h2 {
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0;
+}
+
+.modal p {
+    color: var(--color9);
+    font-size: 1.1rem;
+}
+
+
+.modal button {
+    width: 100%;
+    background-color: var(--color1);
+    border: none;
+    color: white;
+    padding: 1rem;
+    cursor: pointer;
+
+    &:hover {
+        background-color: var(--color2);
+    }
+}
+
+.containerItem {
+    border-radius: 8px;
+    background-color: var(--color5);
+}
+
+.containerItem .item {
+    background-color: var(--color5);
+    border-radius: 8px 8px 0 0;
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    justify-content: space-between;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 1.5rem;
+}
+
+.containerItem .item > div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.containerItem .item h4 {
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.containerItem .item p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.containerItem .item img {
+    width: 64px;
+    height: 64px;
+}
+
+.containerItem .item > div span {
+    align-self: start;
+    color: var(--color9);
+}
+
+.containerItem .others p {
+    text-align: center;
+    font-size: .9rem;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+.others hr {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.containerItem .total {
+    background-color: var(--color6);
+    padding: 1.5rem;
+    border-radius: 0 0 8px 8px ;
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+    text-transform: uppercase;
+    gap: .8rem;
+    font-size: 1.1rem;
+}
+
+.total > span {
+    font-weight: 500;
+    color: var(--color9);
+}
+
+.total span:last-child {
+    font-size: 1.5rem;
+    color: var(--color5);
+    font-weight: 600;
+}

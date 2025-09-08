@@ -5,11 +5,21 @@ import Button from "../../ui/Button";
 
 import styles from './ModalCart.module.css';
 
+
+import { useEffect } from 'react';
 import ControllerCart from './ControllerCart'
+
 
 
 const ModalCart = ({ onClose }) => {
     const {cart, clearCart} = useCart();
+
+    useEffect(() => {
+        document.body.style.overflow = 'hidden';
+        return () => {
+            document.body.style.overflow = '';
+        };
+    }, []);
 
 
   return (

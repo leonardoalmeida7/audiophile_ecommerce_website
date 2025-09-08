@@ -1,12 +1,15 @@
 import { useCart } from '../../../context/useCart';
 import { Link } from 'react-router-dom';
+import ShoppingCompleted from '../../../components/modal/ShoppingCompleted';
+
+import { useState } from 'react';
 
 import Button from "../../../ui/Button";
 
 import styles from './CartSummary.module.css';
 
 const CartSummary = () => {
-    const {cart, clearCart} = useCart();
+    const {cart} = useCart();
 
     const total = new Intl.NumberFormat('en-US').format(cart.reduce((acc, item) => acc + item.price * item.quantity, 0));
 
@@ -16,6 +19,29 @@ const CartSummary = () => {
 
     const grandTotal = new Intl.NumberFormat('en-US').format(cart.reduce((acc, item) => acc + item.price * item.quantity, 0) + shipping);
 
+    const [modalActive, setModalActive] = useState(false);
+
+    const handleClick = () => {
+      const forms = document.querySelectorAll("form");
+      let allValid = true;
+
+      forms.forEach((form) => {
+        if (!form.checkValidity()) {
+          allValid = false;
+          form.reportValidity(); // mostra os erros nativos do navegador
+          
+        }
+      });
+      if(!allValid) {
+        window.alert("Por favor, preencha todos os campos obrigatórios.");
+      }
+
+      if (allValid) {
+        window.scrollTo(0, 0);
+        setModalActive(true);
+      }
+    };
+    
   return (
     <section className={styles.summary}>
        <div>
@@ -56,8 +82,9 @@ const CartSummary = () => {
           <span>Grand Total:</span>
           <span>${grandTotal}</span>
         </div>
-        <Button onClick={clearCart}>Continue & pay</Button> 
+        <Button event={handleClick}>Continue & pay</Button>
        </div>
+       {modalActive && <ShoppingCompleted setModalActive={setModalActive} />}
     </section>
   )
 }

@@ -40,6 +40,11 @@
     gap: .5rem;
 }
 
+.checkout form div label {
+    font-size: .9rem;
+    font-weight: 600;
+}
+
 .checkout form div input {
     padding: 1rem;
     border: 1px solid var(--color9);
@@ -56,6 +61,14 @@
 .payment {
     display: flex;
     flex-direction: column;
+}
+
+.payment span {
+    font-weight: 600;
+}
+
+.payment form:last-child {
+    margin-top: 2rem;
 }
 
 .payment form {

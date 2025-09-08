@@ -4,6 +4,8 @@ import styles from './Checkout.module.css'
 import CartSummary from './components/CartSummary'
 
 const Checkout = () => {
+
+
   return (
     <div className={styles.container}>
       <GoBack />
