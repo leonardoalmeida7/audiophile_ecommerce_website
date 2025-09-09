@@ -93,3 +93,18 @@
         left: 0;
     }
 }
+
+@media (min-width: 768px) {
+    .container {
+        justify-content: flex-start;
+    }
+
+    .title {
+        margin-left: 40px;
+        flex: 1;
+    }
+
+}
+
+
+

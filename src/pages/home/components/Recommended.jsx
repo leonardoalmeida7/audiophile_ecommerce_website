@@ -12,11 +12,13 @@ const Recommended = () => {
     <div className={styles.recommended}>
         <div className={styles.containerSpeaker}>
             <img src={imgSpeaker} alt="zx9_speakers"  className={styles.imgSpeaker}/>
-            <h2>ZX9 <br /> SPEAKERS</h2>
-            <p>Upgrade to premium speakers that are phenomenally built to deliver truly remarkable sound.</p>
-            <Link to="/product/6">
-                <Button>SEE PRODUCT</Button>
-            </Link>
+            <div className={styles.info}>
+                <h2>ZX9 <br /> SPEAKERS</h2>
+                <p>Upgrade to premium speakers that are phenomenally built to deliver truly remarkable sound.</p>
+                <Link to="/product/6">
+                    <Button>SEE PRODUCT</Button>
+                </Link>
+            </div>
         </div>
         <div className={styles.containerSpeaker2}>
             <div>

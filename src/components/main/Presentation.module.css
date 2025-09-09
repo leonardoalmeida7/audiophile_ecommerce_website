@@ -2,13 +2,21 @@
     margin: 140px 0;
 }
 
+.imageContainer {
+    text-align: center;
+}
+
 .imageContainer img {
     width: 100%;
+    max-width: 500px;
     border-radius: 8px;
+    margin: 0 auto;
 }
 
 .textContainer {
     margin-top: 32px;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 .textContainer h2 {
@@ -30,4 +38,28 @@
     color: var(--color9);
     text-align: center;
     line-height: 1.5;
+}
+
+
+@media (min-width: 768px) {
+    .bestAudioGear {
+       margin: 70px 0;
+    }
+
+    .imageContainer img {
+        max-width: none;
+    }
+
+    .textContainer {
+         text-align: center;
+    }
+
+    .textContainer h2 {
+        font-size: 2.5rem;
+        margin: 3.5rem 0 2rem 0;
+    }
+
+    .textContainer p {
+        font-size: 1.1rem;
+    }
 }

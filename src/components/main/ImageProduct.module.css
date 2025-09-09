@@ -1,0 +1,8 @@
+.imageContainer {
+    margin-bottom: 16px;
+}
+
+.imageContainer img {
+    width: 100%;
+    border-radius: 8px;
+}

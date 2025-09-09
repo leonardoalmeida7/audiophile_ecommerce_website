@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom';
 
+import ImageProduct from './ImageProduct'
+
 import styles from './ProductCategory.module.css'
 
 import useFilterByCategory from "../../hooks/useFilterByCategory"
@@ -19,6 +21,7 @@ const ProductCategory = ({page}) => {
     <div className={styles.containerProductCategory}>
         {data.reverse().map(item => (
           <div className={styles.product} key={item.id}>
+            <ImageProduct item={item} />
             <ProductDetails item={item} page={pageCategory} />
             <Link to={`/product/${item.id}`}><Button className={styles.btn} >See product</Button></Link>
           </div>

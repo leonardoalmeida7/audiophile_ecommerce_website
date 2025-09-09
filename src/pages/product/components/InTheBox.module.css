@@ -1,7 +1,6 @@
-
-
 .includes {
     margin: 44px 0;
+    max-width: 660px;
 }
 
 .includes h3 {
@@ -10,7 +9,7 @@
     margin-bottom: 20px;
 }
 
-.includes > div {
+.includes > div div {
     margin-bottom: 8px;
 }
 
@@ -22,4 +21,12 @@
 .includes .quantity {
     color: var(--color1);
     font-weight: 600;
+}
+
+@media (min-width: 768px) {
+    .includes {
+        display: flex;
+        justify-content: space-between;
+        
+    }
 }

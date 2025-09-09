@@ -1,11 +1,11 @@
 import { Link } from 'react-router-dom';
+import Main from '../../layouts/Main';
 
 import styles from './Home.module.css';
 
-
 import Products from "../../components/main/Products";
 import Recommended from './components/Recommended';
-import Apresentation from '../../components/main/Presentation';
+import Presentation from '../../components/main/Presentation';
 
 const Home = () => {
   return (
@@ -20,11 +20,11 @@ const Home = () => {
               <Link to="/product/4" className="navlink"><button>SEE PRODUCT</button></Link>
           </div>
       </header>
-      <main className='container px-3'>
+      <Main>
         <Products />
         <Recommended />
-        <Apresentation />
-      </main>
+        <Presentation />
+      </Main>
       
     </>
   )

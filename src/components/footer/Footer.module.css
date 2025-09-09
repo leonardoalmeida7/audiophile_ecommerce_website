@@ -1,6 +1,6 @@
 .footer {
     background-color: var(--color6);
-    padding: 30px 26px;
+    padding: 54px 34px;
     position: relative;
 }
 
@@ -98,4 +98,31 @@
 .link {
     text-decoration: none;
     color: inherit;
+}
+
+@media (min-width: 768px) {
+    .footer::before {
+        left: 10%;
+        transform: translateX(-50%);
+    }
+
+    .logoAndNav {
+        align-items: flex-start;
+        gap: 0;
+    }
+
+    .logoAndNav nav ul {
+        display: flex;
+        gap: 32px;
+    }
+
+    .description {
+        text-align: start;
+    }
+
+    .copyAndIcons {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
 }

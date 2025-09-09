@@ -55,7 +55,7 @@ const Nav = ({ onCartClick }) => {
         <div className={styles.title}>
             <h1>Audiophile</h1>
         </div>
-        <div>
+        <div className={styles.cartIconContainer}>
           <AiOutlineShoppingCart className={styles.cartIcon} onClick={onCartClick} />
         </div>
     </div>

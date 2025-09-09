@@ -1,11 +1,17 @@
 import styles from './Presentation.module.css';
 import imgMan from '/images/shared/mobile/image-best-gear.jpg';
+import imgManTablet from '/images/shared/tablet/image-best-gear.jpg';
+import imgManDesktop from  '/images/shared/desktop/image-best-gear.jpg';
 
 const Presentation = () => {
   return (
     <div className={styles.bestAudioGear}>
         <div className={styles.imageContainer}>
-          <img src={imgMan} alt="Best Audio Gear" />
+          <picture>
+            <source media="(min-width: 1024px)" srcSet={imgManDesktop} />
+            <source media="(min-width: 768px)" srcSet={imgManTablet} />
+            <img src={imgMan} alt="Best Audio Gear" />
+          </picture>
         </div>
         <div className={styles.textContainer}>
           <h2>Bringing you the <span>best</span> audio gear</h2>

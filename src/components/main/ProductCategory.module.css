@@ -16,3 +16,9 @@
 .product button:hover {
     background-color: var(--color2);
 }
+
+@media (min-width: 768px) {
+    .containerProductCategory {
+        margin-top: 110px;
+    }
+}
