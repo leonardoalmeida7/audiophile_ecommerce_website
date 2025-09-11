@@ -3,6 +3,11 @@
     background-color: var(--color5-1);
 }
 
+.container > div {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .checkout {
     background-color: var(--color3);
     border-radius: 8px;
@@ -139,5 +144,20 @@
 
     .paymentMethod {
         grid-column: 2;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container > div {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .container > div > div {
+        grid-column: span 2;
+    }
+
+    .container > div  .checkout {
+        grid-column: 1;
     }
 }

@@ -11,3 +11,20 @@
 .features p {
     color: var(--color9);
 }
+
+
+@media (min-width: 1024px) {
+    .features {
+        display: flex;
+        flex-direction: column;
+        gap: .6rem;
+        width: 580px;
+        float: left;
+        margin: 0 0 8rem 0;
+    }
+
+    .features h2 {
+        font-size: 2rem;
+        margin: 0 0 1rem 0;
+    }
+}

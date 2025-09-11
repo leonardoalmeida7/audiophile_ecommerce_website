@@ -172,3 +172,11 @@
         transform: translateX(-90%);
     }
 }
+
+@media (min-width: 1024px) {
+    .modal {
+        width: 440px;
+        left: 75%;
+        transform: translateX(-75%);
+    }
+}

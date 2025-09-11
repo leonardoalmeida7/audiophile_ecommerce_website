@@ -12,3 +12,12 @@
     color: var(--color1);
     text-decoration: underline;
 }
+
+
+@media (min-width: 768px) {
+    .back {
+        margin: 3rem 0 0 0;
+        color: var(--color9);
+    }
+
+}

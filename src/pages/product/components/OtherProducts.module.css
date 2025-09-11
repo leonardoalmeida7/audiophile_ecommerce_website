@@ -30,6 +30,10 @@
     color: var(--color3);
     border: none;
     margin: 16px 0;
+
+    &:hover {
+        background-color: var(--color2);
+    }
 }
 
 @media (min-width: 768px) {
@@ -42,4 +46,10 @@
         gap: .5rem;
     }
 
+}
+
+@media (min-width: 1024px) {
+    .others {
+        gap: 1.5rem;
+    }
 }

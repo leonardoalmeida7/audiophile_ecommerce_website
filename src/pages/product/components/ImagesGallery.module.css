@@ -16,10 +16,6 @@
 
 
 @media (min-width: 768px) {
-    .imagesContainer div {
-        
-    }
-
     .imagesContainer {
         display: grid;
         grid-template-columns: 1fr minmax(300px, 1.5fr);
@@ -44,5 +40,13 @@
     .imagesContainer .third {
         grid-row: 1 / span 2;
         grid-column: 2;
+    }
+}
+
+@media (min-width: 1024px) {
+    .imagesContainer {
+        clear: both;
+        gap: 1.5rem;
+        margin: 8rem 0;
     }
 }

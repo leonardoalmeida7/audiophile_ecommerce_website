@@ -14,8 +14,7 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    max-width: 1200px;
-    padding: 0 34px;       
+    max-width: 1200px;   
     margin: 0 auto;
 }
 
@@ -70,6 +69,7 @@
     transition: all .3s ease;
     text-transform: uppercase;
     font-size: .9rem;
+    padding: 0 24px;
 }
 
 .navList li:hover {
@@ -128,15 +128,19 @@
     .title {
         margin: 0;
     }
+
+    .cartIconContainer {
+        margin-right: 2.5rem;
+    }
     
     .hidden, 
     .showNav {
         background-color: transparent;
         transition: none;
         width: auto;
-        left: 50%;
+        left: 55%;
         top: 50%;
-        transform: translate(-50%, -50%);
+        transform: translate(-55%, -50%);
     }
 
     .navList {
@@ -147,11 +151,9 @@
 
     .navList li {
         margin: 0;
+        padding: 0;
     }
 
-    .navList ul {
-        margin-bottom: 0;
-    }
 
     .hidden {
         opacity: 1;

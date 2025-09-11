@@ -11,8 +11,16 @@ body, html {
     margin-top: 80px;
 }
 
+.containerProductsDetails {
+    margin-top: 120px;
+}
+
 @media (min-width: 1024px) {
     .containerProducts {
+        margin-top: 0;
+    }
+
+    .containerProductsDetails {
         margin-top: 0;
     }
 }
