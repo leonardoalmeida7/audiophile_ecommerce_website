@@ -10,6 +10,7 @@
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+
 }
 
 .checkout h1 {
@@ -115,3 +116,28 @@
   background-color: var(--color1);
 }
 
+
+@media (min-width: 768px) {
+    .billingDetails form,
+    .shoppingInfo form {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem; 
+        margin-bottom: 2rem;
+    }
+
+    .shoppingInfo form div:first-child {
+        grid-column: span 2;
+    }
+
+    .payment form {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .paymentMethod {
+        grid-column: 2;
+    }
+}

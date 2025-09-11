@@ -1,8 +1,6 @@
 
 import styles from './Recommended.module.css';
 
-import imgSpeaker from '/images/home/desktop/image-speaker-zx9.png';
-
 import Button from '../../../ui/Button';
 
 import { Link } from 'react-router-dom';
@@ -11,7 +9,8 @@ const Recommended = () => {
   return (
     <div className={styles.recommended}>
         <div className={styles.containerSpeaker}>
-            <img src={imgSpeaker} alt="zx9_speakers"  className={styles.imgSpeaker}/>
+            <div className={styles.imgSpeaker}>
+            </div>
             <div className={styles.info}>
                 <h2>ZX9 <br /> SPEAKERS</h2>
                 <p>Upgrade to premium speakers that are phenomenally built to deliver truly remarkable sound.</p>

@@ -165,3 +165,10 @@
     font-weight: 600;
 }
 
+@media (min-width: 768px) {
+    .modal {
+        width: 50%;
+        left: 90%;
+        transform: translateX(-90%);
+    }
+}

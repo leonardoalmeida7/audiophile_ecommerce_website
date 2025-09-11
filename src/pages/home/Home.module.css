@@ -1,5 +1,6 @@
 .header {
     height: 100vh;
+    background-color: var(--color10);
 }
 
 .hero {
@@ -11,19 +12,13 @@
     height: 100%;
     padding: 0 1rem;
     background: url('/images/home/mobile/image-header.jpg') no-repeat center center/cover;
-    position: relative;
-    z-index: -200;
+    color: var(--color3);
+    max-width: 1294px;
+    margin: 0 auto;
 }
 
 .content {
-    position: absolute;
-    width: 100%;
     max-width: 500px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: white;
     padding: 0 3rem;
 }
 
@@ -79,17 +74,12 @@
     .header {
         height: 80vh;
     }
-}
-
-@media (min-width: 768px) {
     .hero {
         background: url('/images/home/tablet/image-header.jpg') no-repeat center center/cover;
     }
+}
 
-    .content {
-        top: 42%;
-    }
-
+@media (min-width: 768px) {
     .content h1 {
         font-size: 3.5rem;
     }
@@ -98,4 +88,14 @@
         font-size: 1.125rem;
         margin-bottom: 2.5rem;
     }
+}
+
+@media (min-width: 1024px) {
+    .hero {
+        background-image: url('/images/home/desktop/image-hero.jpg');
+        text-align: start;
+        align-items: start;
+    }
+
+    
 }

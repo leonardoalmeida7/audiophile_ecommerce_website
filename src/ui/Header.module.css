@@ -19,3 +19,9 @@
         padding: 64px;
     }
 }
+
+@media (min-width: 1024px) {
+    .header {
+        padding: 32px;
+    }
+}

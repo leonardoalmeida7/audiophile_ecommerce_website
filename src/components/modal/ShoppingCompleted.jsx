@@ -26,8 +26,8 @@ const ShoppingCompleted = ({setModalActive}) => {
             <div>
                 <img src={`images/checkout/icon-order-confirmation.svg`} alt={cart[0]?.name} />
             </div>
-            <div>
-                <h2>Thank you for your order</h2>
+            <div className={styles.title}>
+                <h2>Thank you <span>for your order</span></h2>
                 <p>
                     You will receive an email confirmation shortly.
                 </p>

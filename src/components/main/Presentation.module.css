@@ -17,13 +17,13 @@
     margin-top: 32px;
     max-width: 600px;
     margin: 0 auto;
+    text-align: center;
 }
 
 .textContainer h2 {
     font-size: 1.9rem;
     font-weight: 700;
     color: var(--color4);
-    text-align: center;
     text-transform: uppercase;
     margin-bottom: 26px;
 }
@@ -36,7 +36,6 @@
     font-size: 1.05rem;
     font-weight: 500;
     color: var(--color9);
-    text-align: center;
     line-height: 1.5;
 }
 
@@ -50,10 +49,6 @@
         max-width: none;
     }
 
-    .textContainer {
-         text-align: center;
-    }
-
     .textContainer h2 {
         font-size: 2.5rem;
         margin: 3.5rem 0 2rem 0;
@@ -61,5 +56,23 @@
 
     .textContainer p {
         font-size: 1.1rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .bestAudioGear {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        gap: 2.5rem;
+    }
+
+    .bestAudioGear > div {
+        flex: 1;
+        padding: 20px;        
+    }
+
+    .textContainer {
+        text-align: left;
     }
 }

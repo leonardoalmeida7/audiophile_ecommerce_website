@@ -124,3 +124,41 @@
     color: var(--color5);
     font-weight: 600;
 }
+
+@media (min-width: 768px) {
+    .modal {
+        width: 80%;
+        padding: 2.2rem;
+    }
+
+    .modal .title span {
+        display: block;
+    }
+
+    .modal h2 {
+        font-size: 2rem;
+        margin: 1rem 0;
+    }
+
+    .modal p {
+        font-size: 1.2rem;
+    }
+
+    .modal button {
+        margin-top: 2rem;
+    }
+
+    .containerItem  {
+        display: flex;
+        
+    }
+
+    .containerItem > div {
+        width: 55%;
+    }
+
+    .containerItem .total {
+        justify-content: center;
+        width: 45%;
+    }
+}

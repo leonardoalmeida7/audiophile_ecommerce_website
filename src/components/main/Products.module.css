@@ -13,6 +13,7 @@
     text-decoration: none;
     color: inherit;
     width: 100%;
+    
 }
 
 .products > a:hover p img {
@@ -23,11 +24,10 @@
 .item {
     border-radius: 12px;
     position: relative;
-    height: 200px;
+    height: 195px;
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .img {
@@ -63,6 +63,7 @@
     position: absolute;
     bottom: -50px;
     z-index: -1;
+    padding: 1rem;
 }
 
 .info h3 {
@@ -110,5 +111,11 @@
         /* width: calc(33.333% - 20px); */
         flex: 1;
         margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 1094px) {
+    .products {
+        gap: 1.5rem;
     }
 }

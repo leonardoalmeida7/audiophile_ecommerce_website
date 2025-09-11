@@ -1,10 +1,14 @@
 .footer {
     background-color: var(--color6);
-    padding: 54px 34px;
-    position: relative;
+    
 }
 
-.footer::before {
+.footer > div {
+    position: relative;
+    padding: 54px 34px;
+}
+
+.footer > div::before {
     content: "";
     display: block;
     height: 4px;
@@ -14,6 +18,7 @@
     top: 0;
     left: 50%;
     transform: translateX(-50%);
+    max-width: 150px;
 }
 
 .logoAndNav {
@@ -101,9 +106,9 @@
 }
 
 @media (min-width: 768px) {
-    .footer::before {
-        left: 10%;
-        transform: translateX(-50%);
+    .footer > div::before {
+        left: 22%;
+        transform: translateX(-100%);
     }
 
     .logoAndNav {
@@ -124,5 +129,29 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .footer > div::before {
+        left: 17%;
+    }
+
+    .footer > div {
+        padding: 1rem 2rem;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .logoAndNav {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0;
+    }
+
+    .description {
+        width: 50%;
     }
 }

@@ -13,7 +13,7 @@ const Checkout = () => {
         <div>
           <h1>Checkout</h1>
         </div>
-        <div className="billing-details">
+        <div className={styles.billingDetails}>
           <div>
             <h2>Billing Details</h2>
           </div>
@@ -32,7 +32,7 @@ const Checkout = () => {
             </div>
           </form>
         </div>
-        <div>
+        <div className={styles.shoppingInfo}>
           <div>
             <h2>Shipping Info</h2>
           </div>

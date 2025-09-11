@@ -1,4 +1,12 @@
 .main {
     padding: 0 34px;
     margin-top: 64px;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+@media (min-width: 1024px) {
+    .main {
+        max-width: 1250px;
+    }
 }

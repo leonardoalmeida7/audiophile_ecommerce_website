@@ -22,3 +22,24 @@
         margin-top: 110px;
     }
 }
+
+@media (min-width: 1024px) {
+    .product {
+        flex-direction: row;
+        text-align: left;
+        gap: 64px;
+        margin: 0;
+    }
+
+    .product > div {
+        margin-bottom: 4rem;
+        flex: 1;
+    }
+
+    .product:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+    .btn {
+        margin-top: 32px;
+    }
+}

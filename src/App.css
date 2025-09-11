@@ -11,6 +11,8 @@ body, html {
     margin-top: 80px;
 }
 
-.containerProductsDetails {
-    margin-top: 100px;
+@media (min-width: 1024px) {
+    .containerProducts {
+        margin-top: 0;
+    }
 }

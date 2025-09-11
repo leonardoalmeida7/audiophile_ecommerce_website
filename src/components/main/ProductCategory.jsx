@@ -22,8 +22,10 @@ const ProductCategory = ({page}) => {
         {data.reverse().map(item => (
           <div className={styles.product} key={item.id}>
             <ImageProduct item={item} />
-            <ProductDetails item={item} page={pageCategory} />
-            <Link to={`/product/${item.id}`}><Button className={styles.btn} >See product</Button></Link>
+            <div>
+              <ProductDetails item={item} page={pageCategory} />
+              <Link to={`/product/${item.id}`}><Button className={styles.btn} >See product</Button></Link>
+            </div>
           </div>
         ))}
     </div>

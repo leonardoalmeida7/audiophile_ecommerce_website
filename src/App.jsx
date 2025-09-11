@@ -2,7 +2,6 @@ import { useState } from 'react'
 import { Outlet } from 'react-router-dom';
 import { CartProvider } from "./context/CartContext";
 
-import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css'
 
 

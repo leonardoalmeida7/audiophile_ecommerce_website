@@ -80,7 +80,7 @@
     }
 
     .productAndPriceContainer picture img {
-        height: 600px;
+        height: 560px;
         object-fit: cover;
         transform: scale(.6);
     }
