@@ -30,9 +30,12 @@ const ProductAndPrice = ({ item }) => {
 
   const pageCategory = "features";
 
+  const [productAdded, setProductAdded] = useState(false);
+
   const handleClickAddCart = () => {
     addToCart(refacturingItem);
     updateQuantity(refacturingItem.id, count);
+    setProductAdded(true);
   };
 
   return (
@@ -63,6 +66,7 @@ const ProductAndPrice = ({ item }) => {
             </Button>
           </div>
         </div>
+        {productAdded && (<div className={styles.addedToCart}>Product added to cart!</div>)}
       </div>
     </div>
   );

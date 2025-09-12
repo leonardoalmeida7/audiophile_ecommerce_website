@@ -4,10 +4,16 @@ import { NavLink } from "react-router-dom"; // Troque Link por NavLink
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { GiHamburgerMenu } from "react-icons/gi";
 
+import { useCart } from "../../../context/useCart";
+
 import styles from './Nav.module.css';
 
 const Nav = ({ onCartClick }) => {
   const [isActive, setIsActive] = useState(false);
+
+  const { cart } = useCart();
+
+  console.log(cart);
 
   const handleClick = () => {
     setIsActive(!isActive);
@@ -58,6 +64,7 @@ const Nav = ({ onCartClick }) => {
           </div>
           <div className={styles.cartIconContainer}>
             <AiOutlineShoppingCart className={styles.cartIcon} onClick={onCartClick} />
+            {cart.length > 0 && <div className={styles.notification}>{cart.length}</div>}
           </div>
         </div>
     </div>

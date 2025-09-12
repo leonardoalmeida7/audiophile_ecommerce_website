@@ -60,6 +60,13 @@
     background: var(--color2);
 }
 
+.addedToCart {
+    margin-top: 1rem;
+    color: green;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
 
 @media (min-width: 768px) {
     .productAndPriceContainer {

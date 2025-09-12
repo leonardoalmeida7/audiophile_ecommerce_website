@@ -1,10 +1,19 @@
 import GoBack from '../../components/main/GoBack'
 
+import { useRef, useState } from 'react'
+
+import iconMoney from '/images/checkout/icon-cash-on-delivery.svg'
+
 import styles from './Checkout.module.css'
 import CartSummary from './components/CartSummary'
 
 const Checkout = () => {
+  const eMoneyPin = useRef(null);
+  const [isEMoney, setIsEMoney] = useState(false);
 
+  const handleClick = (e) => {
+    setIsEMoney(eMoneyPin.current.checked);
+  }
 
   return (
     <div className={styles.container}>
@@ -63,24 +72,36 @@ const Checkout = () => {
             <form>
               <span>Payment Method</span>
               <div className={styles.paymentMethod}>
-                <input type='radio' id="e-money" name="payment-method" value="e-money" defaultChecked />
+                <input type='radio' id="e-money" name="payment-method" value="e-money" defaultChecked onClick={handleClick} />
                 <label htmlFor="card-name">e-Money</label>
               </div>
               <div className={styles.paymentMethod}>
-                <input type='radio' id="cash-on-delivery" name="payment-method" value="cash-on-delivery" />
+                <input type='radio' id="cash-on-delivery" name="payment-method" value="cash-on-delivery" onClick={handleClick} ref={eMoneyPin} />
                 <label htmlFor="cash-on-delivery">Cash on Delivery</label>
               </div>
             </form>
-            <form>
-              <div>
-                <label htmlFor="e-money-number">e-Money Number</label>
-                <input type="text" id="e-money-number" name="e-money-number" placeholder="238521993" />
-              </div>
-              <div>
-                <label htmlFor="e-money-pin">e-Money PIN</label>
-                <input type="text" id="e-money-pin" name="e-money-pin" placeholder="6891" />
-              </div>
-            </form>
+            {
+              !isEMoney ? (
+                <form>
+                  <div>
+                    <label htmlFor="e-money-number">e-Money Number</label>
+                    <input type="text" id="e-money-number" name="e-money-number" placeholder="238521993" />
+                  </div>
+                  <div>
+                    <label htmlFor="e-money-pin">e-Money PIN</label>
+                    <input type="text" id="e-money-pin" name="e-money-pin" placeholder="6891" />
+                  </div>
+                </form>
+              ) : (
+                <div className={styles.cashOnDelivery}>
+                  <img src={iconMoney} alt="cash on delivery" />
+                  <p>
+                    The 'Cash on Delivery' option enables you to pay in cash when our delivery courier arrives at your residence. 
+                    Just make sure your address is correct so that your order will not be cancelled.
+                  </p>
+                </div>
+              )
+            }
           </div>
         </section>
         <CartSummary />

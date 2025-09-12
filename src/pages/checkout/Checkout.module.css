@@ -121,6 +121,15 @@
   background-color: var(--color1);
 }
 
+.cashOnDelivery {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    color: var(--color9);
+    padding: 0 1rem;
+    margin-top: 1.5rem;
+}
+
 
 @media (min-width: 768px) {
     .billingDetails form,
@@ -145,16 +154,23 @@
     .paymentMethod {
         grid-column: 2;
     }
+
+    .cashOnDelivery {
+        margin-top: 0;
+    }
 }
 
 @media (min-width: 1024px) {
     .container > div {
         display: grid;
         grid-template-columns: 2fr 1fr;
+        grid-template-rows: auto;
+        gap: 2rem;
     }
 
     .container > div > div {
         grid-column: span 2;
+        grid-row: 1 / 2;
     }
 
     .container > div  .checkout {
