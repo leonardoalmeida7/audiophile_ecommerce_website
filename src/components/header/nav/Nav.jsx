@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom"; // Troque Link por NavLink
 
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { GiHamburgerMenu } from "react-icons/gi";
+import Logo from "/images/shared/desktop/logo.svg";
 
 import { useCart } from "../../../context/useCart";
 
@@ -59,7 +60,7 @@ const Nav = ({ onCartClick }) => {
             </nav>
           </div>
           <div className={styles.title}>
-              <h1>Audiophile</h1>
+              <img src={Logo} alt="Audiophile Logo" />
           </div>
           <div className={styles.cartIconContainer}>
             <AiOutlineShoppingCart className={styles.cartIcon} onClick={onCartClick} />

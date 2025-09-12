@@ -17,15 +17,6 @@
     max-width: 1200px;   
     margin: 0 auto;
 }
-
-.title h1 {
-    text-transform: lowercase;
-    font-weight: 900;
-    font-size: 1.7rem;
-    cursor: pointer;
-    margin: 0;
-}
-
 .hamburgerIcon,
 .cartIcon {
     font-size: 1.6rem;

@@ -4,12 +4,14 @@ import { FaXTwitter } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa6";
 import { Link } from 'react-router-dom';
 
+import Logo from "/images/shared/desktop/logo.svg";
+
 const Footer = () => {
   return (
     <footer className={styles.footer}>
         <div>
           <div className={styles.logoAndNav}>
-            <h2>Audiophile</h2>
+            <img src={Logo} alt="Audiophile Logo" />
             <nav>
               <ul>
                 <li><Link to="/" className={styles.link}>Home</Link></li>
