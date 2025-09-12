@@ -13,7 +13,6 @@ const Nav = ({ onCartClick }) => {
 
   const { cart } = useCart();
 
-  console.log(cart);
 
   const handleClick = () => {
     setIsActive(!isActive);

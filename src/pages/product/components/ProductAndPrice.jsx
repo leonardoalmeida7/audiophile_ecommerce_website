@@ -26,6 +26,8 @@ const ProductAndPrice = ({ item }) => {
 
   const [count, setCount] = useState(itemQnty);
 
+  console.log(itemQnty);
+
   const refacturingItem = { id, name: nameJoin, slug, price };
 
   const pageCategory = "features";
@@ -37,6 +39,10 @@ const ProductAndPrice = ({ item }) => {
     updateQuantity(refacturingItem.id, count);
     setProductAdded(true);
   };
+  useEffect(() => {
+    setCount(itemQnty);
+    setProductAdded(false);
+  }, [item]);
 
   return (
     <div className={styles.productAndPriceContainer}>

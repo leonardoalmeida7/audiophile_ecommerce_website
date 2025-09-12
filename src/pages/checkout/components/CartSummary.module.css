@@ -91,6 +91,7 @@
         margin-top: 0;
         grid-column: 2;
         grid-row: 2;
+        height: fit-content;
     }
     
 }

@@ -41,7 +41,11 @@ const ModalCart = ({ onClose }) => {
                     <h4>Total</h4>
                     <p>${new Intl.NumberFormat('en-US').format(cart.reduce((acc, item) => acc + item.price * item.quantity, 0))}</p>
                 </div>
-                <Link to="/checkout"><Button event={onClose}>Checkout</Button></Link>
+                {cart.length > 0 &&
+                (
+                    <Link to="/checkout"><Button event={onClose}>Checkout</Button></Link>
+                )}
+                
             </div>
         </section>
     </div>
