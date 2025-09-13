@@ -99,6 +99,10 @@
         flex-direction: column;
         justify-content: center;
     }
+
+    .controls {
+        padding: 1rem 0;
+    }
 }
 
 @media (min-width: 1024px) {    
